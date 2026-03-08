@@ -1,0 +1,200 @@
+/* ===============================
+   GLOBAL APP STYLING
+================================= */
+
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main container */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* ===============================
+   SIDEBAR STYLING
+================================= */
+
+section[data-testid="stSidebar"] {
+    background-color: #111827;
+    border-right: 1px solid #1f2937;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #f8fafc;
+}
+
+/* Sidebar buttons */
+section[data-testid="stSidebar"] .stButton > button {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 12px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+section[data-testid="stSidebar"] .stButton > button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #1e3a8a, #1e40af);
+}
+
+/* ===============================
+   HEADERS
+================================= */
+
+h1 {
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+h2, h3 {
+    color: #cbd5e1;
+}
+
+/* ===============================
+   KPI METRICS STYLE
+================================= */
+
+div[data-testid="metric-container"] {
+    background: linear-gradient(145deg, #1e293b, #111827);
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    border: 1px solid #1f2937;
+    transition: 0.3s ease;
+}
+
+div[data-testid="metric-container"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+/* Metric label */
+div[data-testid="metric-container"] label {
+    color: #94a3b8 !important;
+    font-size: 0.9rem !important;
+}
+
+/* Metric value */
+div[data-testid="metric-container"] div {
+    font-size: 1.5rem !important;
+    font-weight: 600;
+    color: #f1f5f9 !important;
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+
+.stButton > button {
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 18px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+}
+
+/* ===============================
+   DATAFRAME STYLING
+================================= */
+
+[data-testid="stDataFrame"] {
+    background-color: #1e293b;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+/* ===============================
+   EXPANDER
+================================= */
+
+details {
+    background-color: #1e293b;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #334155;
+}
+
+/* ===============================
+   ALERT BOXES
+================================= */
+
+.stAlert-success {
+    background-color: #064e3b !important;
+    border-left: 4px solid #10b981 !important;
+}
+
+.stAlert-warning {
+    background-color: #78350f !important;
+    border-left: 4px solid #f59e0b !important;
+}
+
+.stAlert-error {
+    background-color: #7f1d1d !important;
+    border-left: 4px solid #ef4444 !important;
+}
+
+/* ===============================
+   TEXT INPUT & SELECTBOX
+================================= */
+
+.stSelectbox > div {
+    background-color: #1e293b;
+    border-radius: 8px;
+    border: 1px solid #334155;
+}
+
+.stTextInput > div > div > input {
+    background-color: #1e293b;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid #334155;
+}
+
+/* ===============================
+   DIVIDER
+================================= */
+
+hr {
+    border: none;
+    border-top: 1px solid #334155;
+}
+
+/* ===============================
+   LOGO IMAGE SPACING
+================================= */
+
+img {
+    border-radius: 8px;
+}
+
+/* ===============================
+   SCROLLBAR
+================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
